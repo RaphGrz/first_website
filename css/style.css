@@ -1,0 +1,370 @@
+@font-face {
+	font-family: fontBasket;
+	src: url(../font/Basketball.otf);
+}
+body{
+	font-family: 'fontBasket';
+	margin: 0px;
+	padding: 0px;
+	background-image: url("https://compass-ssl.xbox.com/assets/00/0d/000d862c-294b-4ded-bef9-27b1a8f1bd6e.jpg?n=NBA-2K21_GLP-Page-Hero-1084_Mamba-Forever_1920x1080.jpg");
+	background-size: 180%;
+	background-attachment: fixed;
+	color: #4D249E;
+}
+				/*Barre de navigation*/
+#imghome {
+	position: absolute;
+	margin: 11px 11px 11px 5px;
+	padding: 5px;
+	height: 20px;
+}
+nav{
+	position: sticky;
+	z-index: 1;
+	top: 0px;
+	width: 100%;
+	background-color: #4D249E;
+}
+
+nav > ul{
+	display: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+nav li{
+	list-style-type: none;
+}
+
+nav ul li{
+	width: 100%;
+	text-align: center;
+}
+
+nav > ul::after{
+	content: "";
+	display: table;
+	clear: both;
+}
+.submenu {
+	display: none;
+}
+.menu-mobile{
+    display: flex;
+	justify-content: center;
+    align-items: center;
+	padding: 12px;
+	color: #FFF;
+}
+label img{
+	height: 30px;
+}
+nav input[type=checkbox]{
+	display: none;
+}
+nav label{
+	display: none;
+}
+
+nav a{
+	display: block;
+	text-decoration: none;
+}
+nav > ul > li > a{
+	padding: 20px 30px;
+	color: #FFF;
+	font-size: 18px;
+}
+
+nav li:hover .submenu{
+	display: block;
+	position: static;
+	top: 100%;
+	left: 0px;
+	padding: 0px;
+	z-index: 1000;
+}
+.submenu li a {
+	padding: 15px 30px;
+	font-size: 14px;
+	color: #222538;
+}
+.submenu li{
+	border-bottom: 1px solid #ccc;
+}
+.home{
+	display: none;
+}
+.home:hover{
+	border-top: 5px solid white;
+	background-color: RGBa(250, 250, 250, 0.15);
+}
+.macarriere:hover{
+	border-top: 5px solid #e44d26;
+	background-color: RGBa(228, 77, 38, 0.15);
+}
+.myteam:hover{
+	border-top: 5px solid #00a0f0;
+	background-color: RGBa(000, 160, 240, 0.15);
+}
+.myleague:hover{
+	border-top: 5px solid #f1dc4f;
+	background-color: RGBa(241, 211, 79, 0.15);
+}
+.TP:hover{
+	border-top: 5px solid #26e44d;
+	background-color: RGBa(38, 228, 77, 0.15);
+}
+.contact:hover{
+	border-top: 5px solid #ff99cc;
+	background-color: RGBa(255, 153, 204, 0.15);
+}
+
+.macarriere .submenu{
+	background-color: RGB(230, 100, 40);
+}
+.myteam .submenu{
+	background-color: RGB(000, 160, 240);
+}
+.myleague .submenu{
+	background-color: RGB(250, 215, 100);
+}
+.submenu li:hover a{
+	color: #eee;
+	font-weight: bold;
+}
+.macarriere .submenu li:hover{
+	background-color: RGB(210, 77, 60);
+}
+.myteam .submenu li:hover{
+	background-color: RGB(000, 115, 200);
+}
+.myleague .submenu li:hover{
+	background-color: RGB(200, 165,75);
+}
+
+nav input[type=checkbox]:checked ~ ul{
+	display: block;
+}
+
+				/*en tete*/
+@keyframes fromtop {
+  from {top:-1000px;}
+  to {top:0px;}
+}
+header{
+	position: relative;
+	animation-name: fromtop;
+	animation-duration: 2s;
+	margin: 35px;
+	padding: 2px;
+	background-color: white;
+	text-align: center;
+}
+header h1 {
+	font-size:35px;
+}
+
+				/*coeur de page*/
+@keyframes fromcenter {
+  from {opacity : 0}
+  to {opacity : 1}
+}
+section{
+	position: relative;
+	opacity: 0;
+	animation-name: fromcenter;
+	animation-delay: 1.5s;
+	animation-duration:2s;
+	animation-fill-mode: forwards;
+	margin: 35px;
+	padding: 15px;
+	background-color: white;
+}
+section h2{
+	font-size: 30px;
+}
+section h3{
+	font-size: 25px;
+}
+section p {
+	font-size: 18px;
+}
+section a{
+	font-size: 18px;
+	color: #4D249E;
+	text-decoration: none;
+}
+section li {
+	font-size: 18px;
+}
+section img{
+	width: 100%;
+	margin: 20px 5px 20px 5px;
+}
+iframe{
+	width: 100%;
+}
+#nextpage{
+}
+				/*Pied de page*/
+footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #E2C054;
+}
+#imgfooter{
+	margin: 8px 0px 5px 5px;
+	padding: 5px 0px 7px 7px;
+	height: 18px;
+}
+footer p {
+	color: #FFF;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12.5px;
+}
+footer a {
+	color: #FFF;
+	text-decoration: none;
+}
+#contactfooter{
+	margin-right: 30px;
+}
+
+				/*Ma carrière perso*/
+.physique{
+	display: none;
+}
+				/*TP003*/
+svg{
+	width: 100%;
+	height: 100%;
+}
+
+				/*CONTACT*/
+.formulaire {
+	background-color: white;
+	margin: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border: 2px solid #4D249E;
+	border-radius: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	color: #4D249E;
+}
+#FormPC{
+	display: none;
+}
+
+
+				/*RESPONSIVE*/
+@media screen and (min-width: 1050px){
+	body{
+		background-size: 110%;
+	}
+	/*Barre de navigation*/
+	.menu-mobile{
+		display: none;
+	}
+	nav input[type=checkbox]:checked ~ ul{
+		display: flex;
+		justify-content: flex-end;
+		align-items: flex-end;
+	}
+	#imghome {
+		margin: 8px;
+		width: auto;
+		height: 35px;
+	}
+	nav ul{ 
+		display: flex;
+		justify-content: flex-end;
+		align-items: flex-end;
+	}
+	nav > ul > li{
+		float: left;
+		position: relative;
+	}
+	nav ul li{
+		text-align: left;
+		width: auto;
+	}
+	.submenu li a{
+		width: 270px;
+	}
+	.home{
+		display: inline;
+	}
+	nav li:hover .submenu{
+		display: inline-block;
+		position: absolute;
+	}
+	/*titre*/
+	header{
+		margin: 60px;
+	}
+	header h1{
+		font-size: 70px;
+	}
+	/*coeur de page*/
+	section {
+		margin: 60px;
+		padding: 15px 60px 15px 60px;
+	}
+	section h2{
+		font-size: 35px;
+	}
+	section h3{
+		font-size: 28px;
+	}
+	section p, section li, section a{
+		font-size: 22.5px;
+	}
+	iframe{
+		height: 700px;
+	}
+	.img2 img {
+		width: 48%;
+	}
+	.img3 img{
+		width: 32%;
+	}
+	/*Footer*/
+	#imgfooter{
+		margin: 8px;
+		width: auto;
+		height: 35px;
+	}
+	footer p{
+		font-size: 15px;
+	}
+	/*carrière perso*/
+	.physique{
+		display: inline;
+		margin: auto;
+		border-collapse: collapse;
+	}
+	.physique td, th{
+		padding: 15px;
+		border: 2px solid #4D249E;
+		text-align: center;
+	}
+	.physique td:nth-child(even){
+		background-color: #BDDAB3;
+	}
+	.physique td:nth-child(2n+1){
+		background-color: #DAB7B3;
+	}
+	/*Formulaire*/
+	#FormMobile{
+		display: none;
+	}
+	#FormPC{
+		display: block;
+	}
+	.formulaire td, .formulaire td{
+		padding: 5px;
+	}
+}

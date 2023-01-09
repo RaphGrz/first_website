@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="height=device-height, width=device-width initial-scale=1">
+		<link rel="stylesheet" href="../css/style.css">
+		<title>Contact | NBA2K RG</title>
+	</head>
+	<body>
+		<nav><!--barre de navigation-->
+			<a href="../index.html">
+				<img id="imghome" alt="Acceuil" src="../images/nba2krg.png">
+			</a>
+			<label for="menu-mobile" class="menu-mobile">
+				<img alt="Menu" src="../images/menu.png">
+			</label>
+			<input type="checkbox" id="menu-mobile" role="button">
+			<ul>
+				<li class="home">
+					<a href="../index.html">Home</a>
+				</li>
+				<li class="macarriere"><a href="macarriere.html">Ma Carriere</a>
+					<ul class="submenu">
+						<li><a href="macarriere.html">Presentation</a></li>
+						<li><a href="macarriere_perso.html">Creer son joueur</a></li>
+						<li><a href="macarriere_city.html">The city</a></li>
+					</ul>
+				</li>
+				<li class="myteam"><a href="myteam.html">Mon Equipe</a>
+					<ul class="submenu">
+						<li><a href="myteam.html">Presentation</a></li>
+						<li><a href="myteam_mode.html">Modes de  jeu</a></li>
+						<li><a href="myteam_carte.html">Les Cartes</a></li>
+					</ul>
+				</li>
+				<li class="myleague"><a href="wnba.html">Les autres modes</a>
+					<ul class="submenu">
+						<li><a href="wnba.html">The W</a></li>
+						<li><a href="ma_nba.html">Ma NBA</a></li>
+					</ul>
+				</li>
+				<li class="TP"><a href="TP003.htm">TP 003</a>
+				</li>
+				<li class="contact" style="border-top: 5px solid #ff99cc;background-color: RGBa(255, 153, 204, 0.15);"><a href="contact.htm">Contact</a>
+				</li>
+			</ul>
+		</nav>
+		<header>
+			<h1>Nous contacter</h1>
+		</header>
+		<section>
+			<table class="formulaire" id="FormMobile"><!--formulaire MOBILE-->
+				<tr>
+					<td>
+						<form method="post" action="mailto:raphael.garez@yahoo.fr" enctype="text/plain">
+							<h3 style="text-align: center;">Formulaire de saisie</h3>
+							<table>
+								<tr>
+									<td>Nom:</td>
+									<td colspan="3"><input type="text" id="lname" name="Nom" placeholder="Dupont" value=""></td>
+								</tr>
+								<tr>
+									<td>Prénom:</td>
+									<td colspan="3"><input type="text" id="fname" name="Prenom" placeholder="Pierre" value=""></td>
+								</tr>
+								<tr>
+									<td>Date de naissance:</td>
+									<td colspan="3"><input type="date" id="BirthdayDate" name="Date d'Anniversaire" value=""></td>
+								</tr>
+								<tr>
+									<td rowspan="3">Sexe:</td>
+									<td>
+										<input type="radio" id="Masculin" name="Sexe" value="Masculin">
+										<label for="Masculin">Masculin</label>
+									</td>
+								<tr>
+									<td>
+										<input type="radio" id="Feminin" name="Sexe" value="Feminin">
+										<label for="Feminin">Féminin</label>
+									</td>
+								</tr><tr>
+									<td>
+										<input type="radio" id="Indéterminé" name="Sexe" value="Indéterminé">
+										<label for="Indéterminé">Indéterminé</label>
+									</td>
+								</tr>
+								</tr>
+								<tr>
+									<td rowspan="3">Adresse (Numéro/Rue):</td>
+									<td>
+										<input type="text" id="numrue" name="Numero de rue" placeholder="999" value="">
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<select id="typerue" name="Type de rue">
+											<option value="rue">rue</option>
+											<option value="avenue">avenue</option>
+											<option value="bd">bd</option>
+											<option value="allée">allée</option>
+											<option value="impasse">impasse</option>
+											<option value="place">place</option>
+											<option value="suqare">square</option>
+											<option value="lieudit">lieu-dit</option>
+										</select>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<input type="text" id="namerue" name="Nom de rue" placeholder="de France" value="">
+									</td>
+								</tr>
+								<tr>
+									<td>Code postal:</td>
+									<td colspan="3"><input type="text" size="5" maxlength="5" id="codepostal" 
+									name="Code postal" placeholder="75001" value=""></td>
+								</tr>
+								<tr>
+									<td>Ville:</td>
+									<td colspan="3"><input type="text" id="city" name="Ville" placeholder="Paris" value=""></td>
+								</tr>
+								<tr>
+									<td>Adresse Electronique:</td>
+									<td colspan="3"><input type="email" id="email" name="Email" 
+									placeholder="exemple@email.fr" value=""></td>
+								</tr>
+								<tr>
+									<td>Numéro de téléphone:</td>
+									<td colspan="3">
+										<input type="tel" id="phone" name="Telephone" placeholder="0699887766"
+										pattern="[0-9]{10}">
+									</td>
+								</tr>
+								<tr>
+									<td>Commentaire:</td>
+									<td colspan="3"><textarea id="commentary" name="commentaire" rows="3" placeholder="Ajoutez un commentaire.."></textarea></td>
+								</tr>
+								<tr>
+									<td>Envoyer le formulaire:</td>
+									<td><input type="submit" value="Envoyer"></td>
+								</tr>
+								<tr>
+									<td>Effacer le formulaire:</td>
+									<td><input type="reset"></td>
+								</tr>
+							</table>
+						</form>
+					</td>
+				</tr>
+			</table>
+			<table class="formulaire" id="FormPC"><!--formulaire ORDINATEUR-->
+				<tr>
+					<td>
+						<form method="post" action="mailto:raphael.garez@yahoo.fr" enctype="text/plain">
+							<h3 style="text-align: center;">Formulaire de saisie</h3>
+							<table>
+								<tr>
+									<td>Nom:</td>
+									<td colspan="3"><input type="text" id="lname" name="Nom" placeholder="Dupont" value=""></td>
+								</tr>
+								<tr>
+									<td>Prénom:</td>
+									<td colspan="3"><input type="text" id="fname" name="Prenom" placeholder="Pierre" value=""></td>
+								</tr>
+								<tr>
+									<td>Date de naissance:</td>
+									<td colspan="3"><input type="date" id="BirthdayDate" name="Date d'Anniversaire" value=""></td>
+								</tr>
+								<tr>
+									<td>Sexe:</td>
+									<td colspan="3">
+										<input type="radio" id="Masculin" name="Sexe" value="Masculin">
+										<label for="Masculin">Masculin</label>
+										<input type="radio" id="Feminin" name="Sexe" value="Feminin">
+										<label for="Feminin">Féminin</label>
+										<input type="radio" id="Indetermine" name="Sexe" value="Indetermine">
+										<label for="Indetermine">Indéterminé</label>
+									</td>
+								</tr>
+								<tr>
+									<td>Adresse (Numéro/Rue):</td>
+									<td colspan="3">
+										<input type="text" id="numrue" name="Numero de rue" placeholder="999" value="">
+										<select id="typerue" name="Type de rue">
+											<option value="rue">rue</option>
+											<option value="avenue">avenue</option>
+											<option value="bd">bd</option>
+											<option value="allée">allée</option>
+											<option value="impasse">impasse</option>
+											<option value="place">place</option>
+											<option value="suqare">square</option>
+											<option value="lieudit">lieu-dit</option>
+										</select>
+										<input type="text" id="namerue" name="Nom de rue" placeholder="de France" value="">
+									</td>
+								</tr>
+								<tr>
+									<td>Code postal:</td>
+									<td colspan="3"><input type="text" size="5" maxlength="5" id="codepostal" 
+									name="Code postal" placeholder="75001" value=""></td>
+								</tr>
+								<tr>
+									<td>Ville:</td>
+									<td colspan="3"><input type="text" id="city" name="Ville" placeholder="Paris" value=""></td>
+								</tr>
+								<tr>
+									<td>Adresse Electronique:</td>
+									<td colspan="3"><input type="email" id="email" name="Email" 
+									placeholder="exemple@email.fr" value=""></td>
+								</tr>
+								<tr>
+									<td>Numéro de téléphone:</td>
+									<td colspan="3">
+										<input type="tel" id="phone" name="Telephone" placeholder="0699887766"
+										pattern="[0-9]{10}">
+									</td>
+								</tr>
+								<tr>
+									<td>Commentaire:</td>
+									<td colspan="3"><textarea id="commentary" name="commentaire" rows="3" cols="55" placeholder="Ajoutez un commentaire.."></textarea></td>
+								</tr>
+								<tr>
+									<td>Envoyer le formulaire:</td>
+									<td><input type="submit" value="Envoyer"></td>
+									<td>Effacer le formulaire:</td>
+									<td><input type="reset"></td>
+								</tr>
+							</table>
+						</form>
+					</td>
+				</tr>
+			</table>
+			<img alt="cover nba2k21" src="../images/cover.jpg">
+		</section>
+		<footer><!--Pied de page-->
+			<a href="../index.html">
+				<img id="imgfooter" alt="NBA2K RG" src="../images/nba2krg.png">
+			</a>
+			<p>© GAREZ Raphael<p>
+			<a id="contactfooter" href="contact.htm">Contact</a>
+		</footer>
+	</body>
+</html>
